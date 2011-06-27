@@ -4,13 +4,13 @@
  *
  * Eases up the confusing process of wokring with Facebook, Authorizing and generating token
  *
- * @package        	CodeIgniter
- * @subpackage    	Libraries
- * @category    		Libraries
- * @author        	Black Divine
- * @created					1/05/2011
- * @license         Do whatever you please, and if you add usefull stuff please be sure to send me so I can add it here.
- * @link						http://github.com/blackdivine/Code-Igniter-Face-Book-oAuth-Library
+ * @package		CodeIgniter
+ * @subpackage		Libraries
+ * @category		Libraries
+ * @author		Black Divine
+ * @created		1/05/2011
+ * @license		Do whatever you please, and if you add usefull stuff please be sure to send me so I can add it here.
+ * @link		http://github.com/blackdivine/Code-Igniter-Face-Book-oAuth-Library
  */
 
 class FB
@@ -23,7 +23,7 @@ class FB
     
 	function __construct( $config = array() )
 	{
-    $this->_CI =& get_instance();
+		$this->_CI =& get_instance();
 
 
 		$this->_app_id 					= $config['app_id'];
@@ -50,7 +50,7 @@ class FB
 		$token_url = 'https://graph.facebook.com/oauth/access_token?client_id='.$this->_app_id.'&redirect_uri='.urlencode($redirect_url).'&client_secret='.$this->_app_secret.'&code='.$code;
 		$this->_token = str_replace( 'access_token=','', file_get_contents($token_url) );
 		
-    return true;
+		return true;
 	}
 	
 	function get_token()
