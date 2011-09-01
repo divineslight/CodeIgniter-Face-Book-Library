@@ -1,5 +1,4 @@
-HOW 2 USE:
-==========
+## HOW 2 USE:
 
 
 1. Copy libraries/FB.php to your CI/application/libraries/FB.php
