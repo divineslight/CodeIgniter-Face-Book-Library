@@ -1,3 +1,7 @@
+# Facebook oAuth Library for CodeIgniter
+
+I simply didn't want a huge library just to get facebook oAuth token, so I rolled my own. Is written for CI v2.x and Web Applications using facebook.
+
 ## HOW 2 USE:
 
 
